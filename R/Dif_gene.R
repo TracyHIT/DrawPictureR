@@ -13,3 +13,5 @@ table(res$padj < 0.05)
 res <- res[order(res$padj),]
 resdata <- merge(as.data.frame(res), as.data.frame(counts(dds, normalized=TRUE)),by="row.names",sort=FALSE)
 write.csv(resdata,file = "test.csv")
+
+#
