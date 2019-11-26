@@ -15,3 +15,4 @@ resdata <- merge(as.data.frame(res), as.data.frame(counts(dds, normalized=TRUE))
 write.csv(resdata,file = "test.csv")
 
 #
+test_brench
